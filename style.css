@@ -1,0 +1,168 @@
+*{
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body{
+  background: #080808;
+  color: #fff;
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/me.png);
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  height: 100vh;
+  padding: 10px 10%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width:140px;
+
+}
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px 20px;
+
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+nav ul li a:hover::after{
+  width: 100%;
+  transition: .5s ease-in;
+}
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+
+}
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+span{
+  color: #ff004f;
+}
+
+.logo{
+  font-size: 32px;
+  margin-top: 15px;
+}
+
+.header-text a{
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+button{
+  border-radius: 10px;
+  width: 150px;
+  padding: 15px;
+  margin:L 15px;
+  background-color: #ff004f;
+  border: none;
+  transition: .5s ease-in;
+ 
+}
+button:hover{
+  transition: .5s ease-in;
+  background-color: transparent;
+  border: 3px solid #ff004f;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 800px){
+  #header{
+    background-image: url(images/me-760.png)
+  }
+  .header-text h1{
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 500px){
+  #header{
+    background-image: url(images/me-600.png)
+  }
+  button{
+    width: 180px;
+    padding: 15px;
+    margin: 15px;
+  }
+  .header-text h1{
+    font-size: 42px;
+  }
+  .header-text p{
+    font-size: 20px;
+  }
+  nav ul{
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .header-text h1{
+    font-size:40px;
+
+  }
+  nav ul{
+    margin-top: 20px;
+  }
+  .header-text p{
+    font-size:30px;
+  }
+  nav ul li{
+    padding: 10px 10px;
+    margin : 5px 5px;
+  }
+}
+@media only screen and (max-width: 350px){
+  .header-text{
+    margin-top: 100px;
+  }
+  nav ul{
+    margin-top: 20px;
+  }
+  .header-text h1{
+    font-size:30px;
+  }
+  nav ul li{
+    padding: 5px 5px;
+    margin : 5px 5px;
+  }
+  .header-text p{
+    font-size:20px;
+  }
+  button{
+    width: 150px;
+    padding: 10px;
+  }
+}
